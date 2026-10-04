@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: #000 url(../images/gavel.png) bottom right no-repeat;
+	background-size: 40% auto;
+	color: #dddce0;
+}
+
+#wrapper {
+	padding: 5em 5% 0;
+}
+
+#left-col {
+	float: left;
+	width: 26%;
+}
+
+heading {
+	margin-bottom: 5em;
+}
+
+nav {
+	color: #fff;
+	width: 60%;
+}
+
+nav ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+nav li {
+	border-bottom: 1px dotted #444;
+	list-style: none;
+	text-align: right;
+	padding: 0 0 0.5em 0;
+	margin-bottom: 0.5em;
+}
+
+#content {
+	float: left;
+	width: 40%;
+	background: rgba(255, 255, 255, .08);
+	padding: 1em 3em;
+	border-radius: 20px;
+}
+
+footer {
+	font-family: "Times New Roman", Times, serif;
+	position: fixed;
+	bottom: 2em;
+	left: 5em;
+}
+
+.page-appointments #content {
+  width: 66%;
+}
+
+.appointments {
+  width: 100%;
+  min-height: 40em;
+}
+
+body.page-appointments {
+  background-image: none;
+}
+
+@media all and (max-width: 1080px) {
+	#content {
+		width: 60%;
+	}
+}
+
+@media all and (max-width: 760px) {
+	#left-col {
+		float: none;
+		width: 100%;
+	}
+	
+	nav {
+		width: 100%;
+	}
+	
+  nav li {
+		display: inline-block;
+		border-bottom: none;
+		margin-right: 2em;
+	}
+	#content {
+		padding: 1em 1em;
+	}
+}
+
+@media all and (max-width: 760px), (max-height: 490px) {
+	footer {
+		position: static;
+		bottom: auto;
+		left: auto;
+		margin-top: 2em;
+	}
+}
+
+@media all and (max-width: 578px) and (max-height: 804px), (max-width: 550px) {
+	body {
+		background-image: none;
+	}
+	#content {
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 700px) and (max-height: 475px), (max-height: 600px) {
+	#wrapper {
+		padding: 0 5%;
+	}
+	body {
+		background-image: none;
+	}
+}
+
+@media all and (max-width: 1335px) {
+  .page-appointments footer {
+    position: static;
+    bottom: auto;
+    left: auto;
+    margin-top: 2em;
+  }
+  .page-appointments #content {
+    width: 90%;
+  }
+  .page-appointments #left-col {
+    float: none;
+    width: 100%;
+  }
+  
+  .page-appointments nav {
+    width: 100%;
+  }
+  
+  .page-appointments nav li {
+    display: inline-block;
+    border-bottom: none;
+    margin-right: 2em;
+  }
+  .page-appointments #content {
+    padding: 1em 1em;
+  }
+  .page-appointments #content {
+    width: 90%;
+  }
+}
